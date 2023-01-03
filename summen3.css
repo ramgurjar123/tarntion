@@ -1,0 +1,19 @@
+*{margin: 0; padding: 0; border-radius: 0;}
+
+.header {display: flex; justify-content: space-between; background-color: aqua;}
+
+.menu ul {display: flex; position: relative;}
+.menu li {list-style: none; padding: 15px; }
+
+.menu .submenu {display: none;
+
+    flex-direction: column;
+position: absolute;
+background-color: beige;
+}
+.menu li:hover .submenu{
+display: flex;
+}
+
+
+

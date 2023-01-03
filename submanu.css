@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    background-color: rgb(208, 230, 230);
+    display: flex;
+    justify-content: space-between;
+    padding: 0  1rem;
+    align-items: center;
+    height: 100px;
+}
+.wrapper ul{
+    display: flex;
+    list-style: none;
+
+}
+.wrapper a{
+    text-decoration: none;
+    padding: 0 1rem;
+    color: black;
+    position: relative;
+}
+.wrapper .ram{
+    flex-direction: column;
+    background-color: rgb(208, 230, 230);
+    position: absolute;
+    top: 100px;
+    right: 320px;
+    text-align: center;
+    display: none;
+}
+.wrapper .ram li{
+    padding: 0.5rem 1rem;
+}
+.wrapper li:hover .ram{
+    display: flex;
+}

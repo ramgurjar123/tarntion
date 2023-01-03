@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.face {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid;
+    background-color: yellow;
+    position: relative;
+
+    animation: rotate .10 linear 5;
+}
+
+.eyebrowleft,
+.eyebrowright {
+    height: 40px;
+    width: 50px;
+    border-radius: 50%;
+    border-top: 2px solid;
+}
+
+.eyebrowleft {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    animation: bro 8s 5s linear 1;
+
+}
+
+.eyebrowright {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+.lefteye,
+.righteye {
+    height: 60px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid;
+    background-color: white;
+    overflow: hidden;
+}
+
+.lefteye {
+    position: absolute;
+    top: 65px;
+    left: 53px;
+    animation: blink 1s 5s linear 1;
+}
+
+.righteye {
+    position: absolute;
+    top: 65px;
+    right: 53px;
+}
+
+.eyeballleft,
+.eyeballright {
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    right: 0px;
+}
+
+.nose {
+    height: 50px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 130px;
+    left: 135px;
+}
+
+.smile {
+    height: 70px;
+    width: 110px;
+    border-radius: 50%;
+    border-bottom: 2px solid;
+    position: absolute;
+    top: 163px;
+    left: 95px;
+    animation: smile 1s 6s linear 1;
+}
+
+@keyframes smile {
+    0% {
+        width: 110px;
+    }
+
+    50% {
+        width: 0;
+        height: 0;
+        left: 150px;
+        top: 220px;
+    }
+
+    100% {
+        width: 110px;
+    }
+}
+
+@keyframes bro {
+    0% {
+        top: 50px;
+    }
+
+    50% {
+        top: 75px;
+    }
+
+    100% {
+        top: 50px;
+    }
+}
+
+
+@keyframes blink {
+    0% {
+        top: 65px;
+        height: 60px;
+    }
+
+    50% {
+        top: 95px;
+        height: 0;
+    }
+
+    100% {
+        top: 65px;
+        height: 60px;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        left: 0;
+        transform: rotate(0);
+    }
+
+    50% {
+        left: 1200px;
+        transform: rotate(360deg);
+    }
+
+    100% {
+        left: 0;
+        transform: rotate(0deg)
+    }
+
+
+}

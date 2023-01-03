@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.wrapper {
+.top {
     background-color: aqua;
     height: 100vh;
     display: flex;
@@ -12,61 +12,83 @@
     justify-content: center;
 }
 
-.anchor {
-    background-color: beige;
-    height: 80%;
-    width: 80%;
+.mid {
+    background-color: yellowgreen;
+    height: 525px;
+    width: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.section {
-    background-color: blue;
-    height: 100px;
+.raj {
     border: 2px solid red;
-    width: 50%;
-    height: 50%;
-    display: flex;
-    align-items: center;
+    height: 200px;
+    width: 200px;
+    margin: 5px;
+    text-align: center;
     justify-content: center;
-    flex-direction: row;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
-.anchor1,
-.anchor2,
-.anchor3,
-.anchor4 {
-    background-color: black;
-    border-radius: 10%;
-    color: white;
+a {
     text-decoration: none;
-    padding: 1rem 2rem;
-    box-shadow: 5px 5px 5px;
+}
+
+.ram1,
+.ram2,
+.ram3,
+.ram4 {
+    background-color: azure;
+    padding: 8px;
     position: relative;
-    z-index: 0;
+    z-index: 2;
     overflow: hidden;
 }
 
-.anchor1::before {
-    content: "";
+.ram2::before {
+    content: '';
     position: absolute;
-    top: 0;
-    left: -50%;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
     height: 100%;
-    width: 50%;
-    background-color: #85d8ce;
+    background: linear-gradient(to top, #085078, #85D8CE);
+    transition: all 0.6s ease;
+    z-index: -1;
 }
-.anchor1:hover::before {left: 0; transition: all0.7s ease; z-index: -1;}
 
-.anchor1::after {
+.ram2:hover::before {
+    bottom: 0;
+}
+
+.ram3::before {
     content: "";
     position: absolute;
-    top: 0;
-    right: -50%;
+    z-index: -1;
     height: 100%;
-    width: 50%;
-    background-color: #85d8ce;
+    top: 0;
+    left: -15%;
+    width: 15%;
+    transition: all 1.5s;
+    background-color:yellow ;
 }
-.anchor1:hover::after {right: 0; transition: all0.7s ease; z-index: -1;}
+.ram3:hover::before{left: 110%;}
+
+.ram4::before{content: "";
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: -60%;
+    left: -60%;
+    height: 100%;
+    transition: all 1.5s; background-color: blue;
+    border-radius: 50%;
+
+
+}
+.ram4:hover::before {transform: scale(5.5); }
+

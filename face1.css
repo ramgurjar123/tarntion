@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: aqua;
+    position: relative;
+    animation: ram 6s 1s linear;
+}
+ /* @keyframes ram {
+    0%{transform: rotate(0);  top: 0; left: 0; background-color: brown;}
+    50%{transform: rotate(360deg); top: 00; left: 70%; background-color: blanchedalmond;}
+    100%{transform: rotate(0); left: 0; top: 0% ;}
+}  */
+
+@keyframes ram { 0%{transform: rotate(0);  top: 0; left: 0;}
+10%{transform: rotate(90deg); top: 400px; left:300px;}
+20%{transform: rotate(180deg); top: 0; left: 600px;;}
+30%{transform: rotate(270deg); top: 400px; left: 900px;} 
+40%{transform: rotate(360deg); top: 0; left: 1200px; background-color: red;}
+50%{transform: rotate(270deg); top: 400px; left:900px;}
+60%{transform: rotate(180deg); top: 0; left: 600px;;}
+70%{transform: rotate(90deg); top: 400px; left: 300px;}
+80%{transform: rotate(0deg); top: 0; left: 0;;} }
+ 
+ 
+
+
+
+
+.ibro1 {
+    height: 30px;
+    width: 80px;
+    border-top: 4px solid;
+    color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 70px;
+    left: 40px;
+    animation: top 2s 5s ;
+    
+}
+
+@keyframes top {
+    0%{top: 50px; } 
+    50%{top: 80px;}
+}
+
+.ibro2 {
+    height: 30px;
+    width: 80px;
+    border-top: 4px solid;
+    color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 70px;
+    right: 40px;
+}
+
+.eye1 {
+    height: 69px;
+    width: 50px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 90px;
+    left: 50px;
+    position: relative;
+    animation: raja 2s 5s ;
+    overflow: hidden;
+    
+
+}
+@keyframes raja {
+    0%{top:90px; }
+    50%{height: 0;   top: 130px; }
+}
+
+.putli1{  height: 30px;
+    width: 40px;
+    background-color: black;
+    
+    border-radius: 50%;
+    position: absolute;
+    top: 35px;
+    left: 2px;
+
+}
+.eye2 {
+    height: 69px;
+    width: 50px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 90px;
+    right: 50px;
+    overflow: hidden;
+
+}
+
+.putli2{  height: 70px;
+    width: 40px;
+    background-color: black;
+    
+    border-radius: 50%;
+    position: absolute;
+    top: 34px;
+    left: 10px;
+
+}
+.smile { 
+    height: 80px;
+    width: 150px;
+    border-bottom: 4px solid;
+    color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 200px;
+    right: 80px;
+    animation: raj 2s 5s ;
+}
+
+@keyframes raj  { 
+    0%{top: 200px; }
+    50%{transform:  scale(0); }
+    100%{transfor:  scale(2.2); }
+    
+ }
+
+
+
+
+    .nak {
+        height: 70px;
+        width: 30px;
+        
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        top: 150px;
+        right: 130px;}
+
+        

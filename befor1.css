@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#gallery {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+
+
+}
+
+.gal {
+  width: 30%;
+  margin: 10px;
+  position: relative;
+  height: 300px;
+  overflow: hidde;
+
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.gal::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  height: 0;
+  width: 0;
+  background-color: rgba(0, 0, 0, .55);
+  z-index: 1;
+  transition: all 1.20s;
+
+}
+
+.gal:hover::before {
+  width: 90%;
+  height: 90%;
+  left: 5%;
+  top: 5%;
+}
+
+.social {display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.social a {height: 25px; width: 25px;}
+
+
+.social::before{ position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  height: 0;
+  width: 0;
+  
+  z-index: 2;
+  transition: all 1.20s;
+}
+.social:hover::before {
+  width: 90%;
+  height: 90%;
+  left: 5%;
+  top: 5%;
+}
+

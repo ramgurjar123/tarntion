@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh
+
+}
+
+.color {background-color: blue; 
+    height: 500px; width: 500px;
+display: flex; 
+align-items: center;
+justify-content: space-between;
+border-radius: 5px;
+
+}
+
+    
+
+
+
+
+.collm1 { background-color:black; 
+    height: 200px; width: 50px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    animation: collm1 3s 1s linear 10;
+    
+
+    
+
+}
+@keyframes collm1{
+    0%{transform: translateY(0); color: aqua;}
+    25%{transform: translateY(-150px);}
+    50%{transform: translateY(0);}
+    75%{transform: translateY(150PX);}
+    100%{transform: translateY(0);}
+}
+.collm2 { background-color:black; 
+    height: 200px; width: 50px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    animation: collm2 3s 2s linear 10;
+    
+    
+}
+@keyframes collm2{
+    0%{transform: translateY(0);}
+    25%{transform: translateY(-150px); color: blue;}
+    50%{transform: translateY(0);}
+    75%{transform: translateY(150PX);}
+    100%{transform: translateY(0);}
+}
+
+.boll { background-color:black; 
+    height: 90px; width: 90px;
+    border-radius: 50%;
+    animation: boll 3s linear 10;
+    
+    
+}
+@keyframes boll{
+    0%{transform: translateX(0);}
+    25%{transform: translateX(155px);}
+    50%{transform: translateX(0);}
+    75%{transform: translateX(-155px);}
+    100%{transform: translateX(0);}
+}

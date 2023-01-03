@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+.header {
+    background: linear-gradient(to right, #76b852, #8dc26f);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.header ul {
+    display: flex;
+    list-style: none;
+    position: relative;
+}
+
+.header li {
+    padding: 0 1rem;
+}
+.menu ul .submenu li{padding: 5px;}
+
+.menu ul .submenu {
+    display: none;
+    position: absolute;
+    flex-direction: column; background-color: #8dc26f
+    
+    
+}
+
+.menu li:hover .submenu{
+    display: flex; 
+    transform: scale(1.5);
+    
+}

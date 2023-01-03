@@ -1,0 +1,13 @@
+*{margin: 0;padding: 0; box-sizing: border-box;}
+
+
+.top {display: flex;justify-content: space-between; align-items: center; background-color: aqua;}
+ .lfet li {list-style: none; padding: 15px;}
+.lfet ul{display: flex; position: relative;}
+
+.lfet ul .ram  {flex-direction: column; display: none; position: absolute;}
+
+.lfet ul :hover .ram {display: flex;}
+
+
+
